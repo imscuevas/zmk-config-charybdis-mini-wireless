@@ -61,7 +61,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <0>;
         };
 
@@ -119,10 +119,10 @@
 
         Alpha {
             bindings = <
-                &kp TAB     &kp DOT     &kp COMMA   &kp SEMI    &kp P           &kp Y   &kp F           &kp G           &kp C       &kp H       &kp L       &kp MINUS
-                &kp CAPS    &hrm LGUI A &hrm LALT O &hrm LCTL E &hrm LSFT U     &kp I   &kp D           &hrm RSFT R     &hrm RCTL T &hrm LALT N &hrm RGUI S &kp SQT
-                &bootloader &kp FSLH    &hrm RALT Q &kp J       &kp K           &kp X   &kp B           &kp M           &kp W       &hrm RALT V &kp Z       &bootloader
-                                                    &ltq 2 ESC  &ltq 1 SPACE    &kp TAB &kp BACKSPACE   &ltq 3 RETURN   
+                &kp TAB     &kp DOT     &kp COMMA   &kp SEMI    &kp P           &kp Y   &kp F               &kp G           &kp C       &kp H       &kp L       &kp MINUS
+                &kp CAPS    &hrm LGUI A &hrm LALT O &hrm LCTL E &hrm LSFT U     &kp I   &kp D               &hrm RSFT R     &hrm RCTL T &hrm LALT N &hrm RGUI S &kp SQT
+                &bootloader &kp FSLH    &hrm RALT Q &kp J       &kp K           &kp X   &kp B               &kp M           &kp W       &hrm RALT V &kp Z       &bootloader
+                                                    &ltq 2 ESC  &ltq 1 SPACE    &kp TAB &ltq 4 BACKSPACE    &ltq 3 RETURN   
             >;
         };
 
@@ -150,6 +150,15 @@
                 &none   &kp LBKT    &kp N4  &kp N5      &kp N6  &kp RBKT    &none           &kp RSHFT   &kp RCTRL   &kp LALT    &kp RGUI    &rg
                 &none   &kp NUBS    &kp N1  &kp N2      &kp N3  &kp GRAVE   &none           &none       &none       &kp RALT    &kp FSLH    &none
                                             &kp EQUAL   &kp N0  &kp MINUS   &kp BACKSPACE   &kp ENTER
+            >;
+        };
+
+        Symbols {
+            bindings = <
+                &none   &kp EQUAL       &kp LS(N1)      &kp RA(LBKT)    &kp RA(RBKT)    &none   &none   &none       &none       &none       &none       &none
+                &none   &kp LS(EQUAL)   &kp LS(MINUS)   &kp LS(N8)      &kp LS(N9)      &none   &none   &kp RSFT    &kp RCTRL   &kp LALT    &kp RGUI    &none
+                &none   &kp NUBS        &kp LS(NUBS)    &kp RA(APOS)    &kp RA(BSLH)    &none   &none   &none       &none       &kp RALT    &none       &none
+                                                        &none           &none           &none   &none   &none       &none
             >;
         };
     };
