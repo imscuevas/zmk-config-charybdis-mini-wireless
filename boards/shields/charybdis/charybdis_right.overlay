@@ -9,6 +9,9 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+#define NAV     1
+#define SCROLL  4
+
 &default_transform {
     col-offset = <6>;
 };
@@ -90,7 +93,7 @@
         device = <&trackball>;
 
         scroller {
-            layers = <1>;
+            layers = <NAV SCROLL>;
             input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
                                <&zip_xy_scaler 1 16>,
                                <&zip_xy_to_scroll_mapper>;
