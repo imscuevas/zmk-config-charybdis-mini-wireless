@@ -9,8 +9,8 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-#define NAV     1
-#define SCROLL  4
+#define NAV     2
+#define SCROLL  5
 
 &default_transform {
     col-offset = <6>;
