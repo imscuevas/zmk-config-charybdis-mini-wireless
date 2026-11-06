@@ -87,16 +87,9 @@
 
 / {
     /delete-node/ EXT_POWER;
+};
 
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-        scroller {
-            layers = <NAV SCROLL>;
-            input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-                               <&zip_xy_scaler 1 16>,
-                               <&zip_xy_to_scroll_mapper>;
-        };
-    };
+&trackball_split {
+    status = "okay";
+    device = <&trackball>;
 };
