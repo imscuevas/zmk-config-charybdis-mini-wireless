@@ -140,9 +140,9 @@
 
         Dvorak {
             bindings = <
-                &kp TAB     &kp DOT             &kp COMMA   &kp SEMI        &kp P           &kp Y   &kp F                   &kp G               &kp C       &kp H       &kp L           &kp MINUS
+                &none       &kp DOT             &kp COMMA   &kp SEMI        &kp P           &kp Y   &kp F                   &kp G               &kp C       &kp H       &kp L           &kp MINUS
                 &kp CAPS    &hrm LGUI A         &hrm LALT O &hrm LCTL E     &hrm LSFT U     &kp I   &kp D                   &hrm RSFT R         &hrm RCTL T &hrm LALT N &hrm RGUI S     &kp SQT
-                &to QWERTY  &hrml MOUSE FSLH    &hrm RALT Q &kp J           &kp K           &kp X   &kp B                   &kp M               &kp W       &hrm RALT V &hrml MOUSE Z   &none
+                &none       &hrml MOUSE FSLH    &hrm RALT Q &kp J           &kp K           &kp X   &kp B                   &kp M               &kp W       &hrm RALT V &hrml MOUSE Z   &none
                                                             &ltq MEDIA ESC  &ltq NAV SPACE  &kp TAB &ltq SYMBOLS BACKSPACE  &ltq NUMBERS RETURN
             >;
         };
@@ -151,7 +151,7 @@
             bindings = <
                 &none       &kp Q            &kp W      &kp E           &kp R           &kp T   &kp Y                   &kp U               &kp I       &kp O           &kp P               &kp MINUS
                 &kp CAPS    &hrm LGUI A     &hrm LALT S &hrm LCTL D     &hrm LSFT F     &kp G   &kp H                   &hrm RSFT J         &hrm RCTL K &hrm LALT L     &hrm RGUI SEMI      &kp SQT
-                &none       &hrml MOUSE Z   &hrm RALT X &kp C           &kp V           &kp B   &kp N                   &kp M               &kp COMMA   &hrm RALT DOT   &hrml MOUSE FSLH    &to DVORAK
+                &none       &hrml MOUSE Z   &hrm RALT X &kp C           &kp V           &kp B   &kp N                   &kp M               &kp COMMA   &hrm RALT DOT   &hrml MOUSE FSLH    &none
                                                         &ltq MEDIA ESC  &ltq NAV SPACE  &kp TAB &ltq SYMBOLS BACKSPACE  &ltq NUMBERS RETURN
             >;
         };
@@ -167,10 +167,10 @@
 
         Media {
             bindings = <
-                &none   &none   &kt LALT    &kt LCTL    &kt LSFT    &none   &none           &kp C_BRI_DN        &kp C_BRI_UP    &kp C_MUTE      &none           &bt_clr_all
-                &none   &none   &mkp MB3    &mkp MB2    &mkp MB1    &none   &kp C_PREV      &kp C_VOL_DN        &kp C_VOLUME_UP &kp C_NEXT      &out OUT_USB    &none
-                &none   &none   &kp RALT    &mkp MB5    &mkp MB4    &none   &bluetooth_0    &bluetooth_1        &bluetooth_2    &bluetooth_3    &bluetooth_4    &none
-                                            &none       &none       &none   &kp C_STOP      &kp C_PLAY_PAUSE
+                &none       &none   &kt LALT    &kt LCTL    &kt LSFT    &none   &none           &kp C_BRI_DN        &kp C_BRI_UP    &kp C_MUTE      &none           &bt_clr_all
+                &to QWERTY  &none   &mkp MB3    &mkp MB2    &mkp MB1    &none   &kp C_PREV      &kp C_VOL_DN        &kp C_VOLUME_UP &kp C_NEXT      &out OUT_USB    &none
+                &to DVORAK  &none   &kp RALT    &mkp MB5    &mkp MB4    &none   &bluetooth_0    &bluetooth_1        &bluetooth_2    &bluetooth_3    &bluetooth_4    &none
+                                                &none       &none       &none   &kp C_STOP      &kp C_PLAY_PAUSE
             >;
         };
 
