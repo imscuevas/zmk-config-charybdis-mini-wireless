@@ -203,10 +203,10 @@
 
         Symbols {
             bindings = <
-                &none   &kp EQUAL       &kp LS(N1)      &kp RA(LBKT)    &kp RA(RBKT)    &none   &none   &none       &none       &none       &none       &none
-                &none   &kp LS(EQUAL)   &kp LS(MINUS)   &kp LS(N8)      &kp LS(N9)      &none   &none   &kp RSFT    &kp RCTRL   &kp LALT    &kp RGUI    &none
-                &none   &kp NUBS        &kp LS(NUBS)    &kp RA(APOS)    &kp RA(BSLH)    &none   &none   &none       &none       &kp RALT    &none       &none
-                                                        &none           &none           &none   &none   &none
+                &none &kp RA(APOS)  &kp LS(N7)  &kp LS(N8)    &kp LS(N9)  &kp RA(BSLH)  &none &none     &none     &none     &none     &none
+                &none &kp RA(LBKT)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)  &kp RA(RBKT)  &none &kp RSFT  &kp RCTRL &kp LALT  &kp RGUI  &none
+                &none &kp LS(NUBS)  &kp LS(N1)  &kp LS(N2)    &kp RA(N3)  &kp RA(GRAVE) &none &none     &none     &kp RALT  &none     &none
+                                                &kp LS(EQUAL) &kp LS(N0)  &kp LS(MINUS) &none &none
             >;
         };
 
