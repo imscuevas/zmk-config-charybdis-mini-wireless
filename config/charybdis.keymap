@@ -140,9 +140,9 @@
 
         Dvorak {
             bindings = <
-&none       &kp DOT       &kp COMMA    &kp SEMI          &kp P          &kp Y  &kp F  &kp G        &kp C        &kp H        &kp L        &kp MINUS
-&kp CAPS    &hrm LGUI A   &hrm LALT O  &hrm LCTL E       &hrm LSFT U    &kp I  &kp D  &hrm RSFT R  &hrm RCTL T  &hrm LALT N  &hrm RGUI S  &kp SQT
-&to 3       &hrml 3 FSLH  &hrm RALT Q  &kp J             &kp K          &kp X  &kp B  &kp M        &kp W        &hrm RALT V  &hrml 3 Z    &none
+&none       &kp DOT       &kp COMMA    &kp SEMI          &kp P          &kp Y  &kp F  &kp G         &kp C         &kp H        &kp L        &kp MINUS
+&kp CAPS    &hrm LGUI A   &hrm LALT O  &hrm LCTRL E      &hrm LSHFT U   &kp I  &kp D  &hrm RSHFT R  &hrm RCTRL T  &hrm LALT N  &hrm RGUI S  &kp SQT
+&to 3       &hrml 3 FSLH  &hrm RALT Q  &kp J             &kp K          &kp X  &kp B  &kp M         &kp W         &hrm RALT V  &hrml 3 Z    &none
 &ltq 2 ESC  &ltq 1 SPACE  &kp TAB      &ltq 6 BACKSPACE  &ltq 5 RETURN
             >;
         };
@@ -158,10 +158,10 @@
 
         Media {
             bindings = <
-&none  &none  &kt LALT  &kt LCTL    &kt LSFT          &none  &none         &kp C_BRI_DN  &kp C_BRI_UP     &kp C_MUTE    &none         &bt_clr_all
-&none  &none  &mkp MB3  &mkp MB2    &mkp MB1          &none  &kp C_PREV    &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT    &out OUT_USB  &none
-&none  &none  &kp RALT  &mkp MB5    &mkp MB4          &none  &bluetooth_0  &bluetooth_1  &bluetooth_2     &bluetooth_3  &bluetooth_4  &none
-&none  &none  &none     &kp C_STOP  &kp C_PLAY_PAUSE
+&none  &none     &none     &none       &none             &none  &none         &kp C_BRI_DN  &kp C_BRI_UP     &kp C_MUTE    &none         &bt_clr_all
+&none  &kp LGUI  &kp LALT  &kp LCTRL   &kp LSHFT         &none  &kp C_PREV    &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT    &out OUT_USB  &none
+&none  &none     &kp RALT  &none       &none             &none  &bluetooth_0  &bluetooth_1  &bluetooth_2     &bluetooth_3  &bluetooth_4  &none
+&none  &none     &none     &kp C_STOP  &kp C_PLAY_PAUSE
             >;
         };
 
@@ -176,10 +176,10 @@
 
         Scroll {
             bindings = <
-&none     &none     &kp RALT  &none     &none     &none  &none  &none  &none  &none  &none  &none
-&none     &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  &none  &none  &none  &none  &none  &none  &none
-&none     &none     &none     &mkp MB5  &mkp MB4  &none  &none  &none  &none  &none  &none  &none
-&mkp MB3  &mkp MB1  &mkp MB2  &mkp MB2  &mkp MB1
+&none     &none     &kp RALT  &none      &none      &none  &none  &none  &none  &none  &none  &none
+&none     &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &none  &none  &none  &none  &none  &none
+&none     &none     &none     &mkp MB5   &mkp MB4   &none  &none  &none  &none  &none  &none  &none
+&mkp MB3  &mkp MB1  &mkp MB2  &mkp MB2   &mkp MB1
             >;
         };
 
@@ -194,9 +194,9 @@
 
         Symbols {
             bindings = <
-&none          &kp RA(APOS)  &kp LS(N7)     &kp LS(N8)  &kp LS(N9)  &kp RA(BSLH)   &none  &none     &none      &none     &none     &none
-&none          &kp RA(LBKT)  &kp LS(N4)     &kp LS(N5)  &kp LS(N6)  &kp RA(RBKT)   &none  &kp RSFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
-&none          &kp LS(NUBS)  &kp LS(N1)     &kp LS(N2)  &kp RA(N3)  &kp RA(GRAVE)  &none  &none     &none      &kp RALT  &none     &none
+&none          &kp RA(APOS)  &kp LS(N7)     &kp LS(N8)  &kp LS(N9)  &kp RA(BSLH)   &none  &none      &none      &none     &none     &none
+&none          &kp RA(LBKT)  &kp LS(N4)     &kp LS(N5)  &kp LS(N6)  &kp RA(RBKT)   &none  &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
+&none          &kp LS(NUBS)  &kp LS(N1)     &kp LS(N2)  &kp RA(N3)  &kp RA(GRAVE)  &none  &none      &none      &kp RALT  &none     &none
 &kp LS(EQUAL)  &kp LS(N0)    &kp LS(MINUS)  &none       &none
             >;
         };
