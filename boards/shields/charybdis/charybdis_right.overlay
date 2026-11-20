@@ -9,8 +9,8 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-#define NAV     2
-#define SCROLL  5
+#define NAV     1
+#define SCROLL  4
 
 &default_transform {
     col-offset = <6>;
@@ -76,7 +76,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <400>;
+        cpi = <200>;
         invert-y;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
